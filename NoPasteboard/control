@@ -1,8 +1,8 @@
 Package: com.pookjw.nopasteboard
 Name: NoPasteboard
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Hide my Clipboard contents!
 Maintainer: pookjw
 Author: pookjw
 Section: Tweaks

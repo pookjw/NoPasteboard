@@ -1,8 +1,8 @@
 Package: com.pookjw.nopasteboardccmodule
 Name: NoPasteboardCCModule
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Toggle NoPasteboard!
 Maintainer: pookjw
 Author: pookjw
 Section: Tweaks
