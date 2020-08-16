@@ -1,6 +1,6 @@
 Package: com.pookjw.nopasteboard
 Name: NoPasteboard
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Description: Hide my Clipboard contents!
 Maintainer: pookjw

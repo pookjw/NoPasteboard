@@ -9,7 +9,6 @@ void updateStatus() {
 	messagingCenter = [objc_getClass("CPDistributedMessagingCenter") centerNamed:@"com.pookjw.nopasteboardmessagecenter"];
 
 	if (messagingCenter == nil) {
-		NSLog(@"Error! 1");
 		isEnabled = NO;
 		return;
 	}
@@ -17,7 +16,6 @@ void updateStatus() {
 
 	NSDictionary *statusDic = [messagingCenter sendMessageAndReceiveReplyName:@"requestStatus" userInfo:nil];
 	if (statusDic == nil) {
-		NSLog(@"Error! 2");
 		isEnabled = NO;
 		return;
 	}
