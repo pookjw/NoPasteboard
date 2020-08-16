@@ -2,6 +2,9 @@
 
 %group HookUIPasteboard
 %hook UIPasteboard
+- (NSArray *)itemProviders {
+	return nil;
+}
 - (_Bool)hasColors {
 	return NO;
 }
@@ -41,6 +44,9 @@
 %end
 
 %hook _UIConcretePasteboard
+- (id)itemProviders {
+	return nil;
+}
 - (_Bool)hasColors {
 	return NO;
 }
@@ -80,16 +86,11 @@
 - (id)items {
 	return nil;
 }
-- (id)itemProviders {
-	NSArray *result = @[];
-	return result;
-}
 
 - (id)dataForPasteboardType:(id)arg1 {
 	return nil;
 }
 %end
-
 %end
 
 %ctor {
