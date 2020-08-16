@@ -1,5 +1,5 @@
-Package: com.pookjw.fakepasteboard
-Name: FakePasteboard
+Package: com.pookjw.nopasteboard
+Name: NoPasteboard
 Version: 0.0.1
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
