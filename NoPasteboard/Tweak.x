@@ -128,6 +128,23 @@ void updateStatus() {
 		return %orig;
 	}
 }
+
+- (id)dataForPasteboardType:(id)arg1 inItemSet:(id)arg2 {
+	updateStatus();
+	if (isEnabled) {
+		return nil;
+	} else {
+		return %orig(arg1, arg2);
+	}
+}
+- (id)dataForPasteboardType:(id)arg1 {
+	updateStatus();
+	if (isEnabled) {
+		return nil;
+	} else {
+		return %orig(arg1);
+	}
+}
 %end
 
 %hook _UIConcretePasteboard
@@ -244,6 +261,14 @@ void updateStatus() {
 	}
 }
 
+- (id)dataForPasteboardType:(id)arg1 inItemSet:(id)arg2 {
+	updateStatus();
+	if (isEnabled) {
+		return nil;
+	} else {
+		return %orig(arg1, arg2);
+	}
+}
 - (id)dataForPasteboardType:(id)arg1 {
 	updateStatus();
 	if (isEnabled) {
