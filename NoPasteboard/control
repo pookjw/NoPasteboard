@@ -1,9 +1,9 @@
 Package: com.pookjw.nopasteboard
 Name: NoPasteboard
-Version: 0.0.1
+Version: 1.0
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: pookjw
 Author: pookjw
 Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000)
+Depends: mobilesubstrate (>= 0.9.5000), com.rpetrich.rocketbootstrap
